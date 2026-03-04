@@ -1,0 +1,17 @@
+C:\Users\phosi\source\repos\Hangman project\Hangman project\bin\Debug\net6.0-windows\Hangman project.exe
+C:\Users\phosi\source\repos\Hangman project\Hangman project\bin\Debug\net6.0-windows\Hangman project.deps.json
+C:\Users\phosi\source\repos\Hangman project\Hangman project\bin\Debug\net6.0-windows\Hangman project.runtimeconfig.json
+C:\Users\phosi\source\repos\Hangman project\Hangman project\bin\Debug\net6.0-windows\Hangman project.dll
+C:\Users\phosi\source\repos\Hangman project\Hangman project\bin\Debug\net6.0-windows\Hangman project.pdb
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman_project.Form1.resources
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.csproj.GenerateResource.cache
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.AssemblyInfoInputs.cache
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.AssemblyInfo.cs
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.csproj.CoreCompileInputs.cache
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.dll
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\refint\Hangman project.dll
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.pdb
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.genruntimeconfig.cache
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\ref\Hangman project.dll
+C:\Users\phosi\source\repos\Hangman project\Hangman project\obj\Debug\net6.0-windows\Hangman project.sourcelink.json
