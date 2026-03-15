@@ -1,0 +1,56 @@
+/* ===== SECURITY PACKAGES ===== */
+.packages-section { background: var(--off-white); padding: 80px 5%; }
+.packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
+
+.package-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+}
+.package-card.featured {
+  background: var(--navy);
+  border-color: var(--navy);
+  transform: scale(1.04);
+}
+.package-card:not(.featured):hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(13,27,62,0.12);
+}
+
+.pkg-badge {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--gold); color: var(--navy);
+  padding: 4px 16px; border-radius: 20px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+}
+.pkg-name { font-size: 16px; font-weight: 600; color: var(--gray); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+.pkg-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px; font-weight: 700; color: var(--navy); line-height: 1;
+  margin-bottom: 6px;
+}
+.package-card.featured .pkg-name { color: rgba(255,255,255,0.6); }
+.package-card.featured .pkg-price { color: var(--gold); }
+.pkg-period { font-size: 13px; color: var(--gray); margin-bottom: 28px; }
+.package-card.featured .pkg-period { color: rgba(255,255,255,0.5); }
+
+.pkg-features { list-style: none; text-align: left; margin-bottom: 32px; }
+.pkg-features li {
+  padding: 8px 0;
+  font-size: 14px; color: var(--navy);
+  display: flex; gap: 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.package-card.featured .pkg-features li { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.1); }
+.pkg-features li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .packages-grid { grid-template-columns: 1fr; }
+  .package-card.featured { transform: scale(1); }
+}
