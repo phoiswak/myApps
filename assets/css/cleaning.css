@@ -1,0 +1,23 @@
+/* ===== CLEANING SERVICE CARDS ===== */
+.page .services-grid .service-card:hover {
+  border: 2px solid var(--gold);
+  box-shadow: 0 16px 40px rgba(201,168,76,0.18);
+  transform: translateY(-6px);
+}
+
+/* ===== CLEANING STANDARDS CARDS ===== */
+.standards-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s;
+}
+.standards-card:hover {
+  border: 2px solid var(--gold);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(201,168,76,0.18);
+}
+.standards-icon { font-size: 32px; margin-bottom: 14px; color: var(--gold); }
+.standards-title { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.standards-text { font-size: 14px; color: var(--gray); line-height: 1.6; }

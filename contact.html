@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Liv Investment (Pty) Ltd</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/refresh.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <img src="https://cdn.builder.io/api/v1/image/assets%2F3f63c4ddbd50441e8f72ea99193eec33%2Fc224b0059c094308a9123958964fed89?format=webp&width=800&height=1200" alt="Liv Investment Logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span
+          style="display:none;color:#fff;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;">LIV
+          <span style="color:#c9a84c">INVESTMENT</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="about.html" id="nav-about">About Us</a></li>
+        <li><a href="ict.html" id="nav-ict">ICT Solutions</a></li>
+        <li><a href="cleaning.html" id="nav-cleaning">Cleaning</a></li>
+        <li><a href="security.html" id="nav-security">Security</a></li>
+        <li><a href="contact.html" id="nav-contact"
+            class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()"
+        aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- CONTACT PAGE -->
+    <main class="page">
+
+      <div class="contact-hero">
+        <div>
+          <div class="section-tag">Contact Us</div>
+          <h1>Get in Touch</h1>
+          <p>Ready to work with us? Reach out for a free consultation or
+            quote.</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Reach us through any of the channels below or fill in the form.</p>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-value">Whitby Manor Office Este, 167 14th Rd,
+                Midrand, 1687, Gauteng</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-value">012 612 0937</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value">info@livinvestment.co.za</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="ci-label">Business Hours</div>
+              <div class="ci-value">Mon–Fri: 08:00–17:00<br>Sat:
+                09:00–13:00</div>
+            </div>
+          </div>
+          <div
+            style="margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.08);">
+            <div class="ci-label" style="margin-bottom:16px;">Follow Us</div>
+            <div style="display:flex;gap:10px;">
+              <a href="https://wa.me/27126120937" target="_blank" rel="noopener"
+                class="social-icon" title="WhatsApp"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://facebook.com/livinvestment" target="_blank"
+                rel="noopener" class="social-icon" title="Facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://linkedin.com/company/livinvestment"
+                target="_blank" rel="noopener" class="social-icon"
+                title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/livinvestment" target="_blank"
+                rel="noopener" class="social-icon" title="X / Twitter"><i
+                  class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <p class="form-subtitle">Select your service below and fill in the
+            details we'll get back to you within 1 business day.</p>
+
+          <!-- Service Tabs -->
+          <div class="service-tabs">
+            <button class="stab" data-service="ict"
+              onclick="switchForm('ict')"><i
+                class="fa-solid fa-laptop-code"></i> ICT</button>
+            <button class="stab" data-service="cleaning"
+              onclick="switchForm('cleaning')"><i class="fa-solid fa-broom"></i>
+              Cleaning</button>
+            <button class="stab" data-service="security"
+              onclick="switchForm('security')"><i
+                class="fa-solid fa-shield-halved"></i> Security</button>
+            <button class="stab active" data-service="general"
+              onclick="switchForm('general')"><i
+                class="fa-solid fa-envelope"></i> General</button>
+          </div>
+
+          <!-- Common Fields -->
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="f-name" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" id="f-company"
+                placeholder="Your company (optional)">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="f-phone" placeholder="+27 ...">
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="f-email" placeholder="you@company.com">
+            </div>
+          </div>
+
+          <!-- ICT Form -->
+          <div id="form-ict" class="service-form" style="display:none;">
+            <div class="form-group">
+              <label>ICT Service Required *</label>
+              <select id="f-ict-service">
+                <option value>Select a service...</option>
+                <option>Web Design & Development</option>
+                <option>Software Development</option>
+                <option>IT Consulting</option>
+                <option>Network Infrastructure</option>
+                <option>Cyber Security</option>
+                <option>Cloud Services</option>
+                <option>Hardware & Software Supply</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Number of Users / Devices</label>
+                <input type="number" id="f-ict-users" placeholder="e.g. 20">
+              </div>
+              <div class="form-group">
+                <label>Preferred Start Date</label>
+                <input type="date" id="f-ict-date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Describe Your Requirements *</label>
+              <textarea id="f-ict-msg"
+                placeholder="Tell us about your current setup, challenges, and what you need..."></textarea>
+            </div>
+          </div>
+
+          <!-- Cleaning Form -->
+          <div id="form-cleaning" class="service-form" style="display:none;">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Type of Cleaning *</label>
+                <select id="f-clean-type">
+                  <option value>Select type...</option>
+                  <option>Residential Cleaning</option>
+                  <option>Commercial Cleaning</option>
+                  <option>Industrial Cleaning</option>
+                  <option>Post-Construction Cleaning</option>
+                  <option>Disinfection & Sanitization</option>
+                  <option>Contract Cleaning</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Frequency</label>
+                <select id="f-clean-freq">
+                  <option value>Select frequency...</option>
+                  <option>Once-off</option>
+                  <option>Weekly</option>
+                  <option>Bi-weekly</option>
+                  <option>Monthly</option>
+                  <option>Contract (discuss)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Property Size (approx. m²)</label>
+                <input type="text" id="f-clean-size" placeholder="e.g. 200m²">
+              </div>
+              <div class="form-group">
+                <label>Preferred Date</label>
+                <input type="date" id="f-clean-date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Property Address *</label>
+              <input type="text" id="f-clean-address"
+                placeholder="Street, suburb, city">
+            </div>
+            <div class="form-group">
+              <label>Additional Notes</label>
+              <textarea id="f-clean-msg"
+                placeholder="Any specific cleaning requirements or areas of concern..."></textarea>
+            </div>
+          </div>
+
+          <!-- Security Form -->
+          <div id="form-security" class="service-form" style="display:none;">
+            <div class="form-group">
+              <label>Services Needed *</label>
+              <div class="checkbox-group">
+                <label class="cb-label"><input type="checkbox"
+                    name="sec-service" value="CCTV Installation"> CCTV
+                  Installation</label>
+                <label class="cb-label"><input type="checkbox"
+                    name="sec-service" value="Access Control"> Access Control
+                  Systems</label>
+                <label class="cb-label"><input type="checkbox"
+                    name="sec-service" value="Alarm Systems"> Alarm
+                  Systems</label>
+                <label class="cb-label"><input type="checkbox"
+                    name="sec-service" value="Electric Fencing"> Electric
+                  Fencing</label>
+                <label class="cb-label"><input type="checkbox"
+                    name="sec-service" value="Gate Automation"> Gate
+                  Automation</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Property Type *</label>
+                <select id="f-sec-proptype">
+                  <option value>Select type...</option>
+                  <option>Residential</option>
+                  <option>Commercial</option>
+                  <option>Industrial</option>
+                  <option>Government / Institutional</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Number of Cameras (if CCTV)</label>
+                <input type="number" id="f-sec-cameras" placeholder="e.g. 4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Site Address for Inspection *</label>
+              <input type="text" id="f-sec-address"
+                placeholder="Street, suburb, city">
+            </div>
+            <div class="form-group">
+              <label>Additional Notes</label>
+              <textarea id="f-sec-msg"
+                placeholder="Describe your security concerns or current setup..."></textarea>
+            </div>
+          </div>
+
+          <!-- General Form -->
+          <div id="form-general" class="service-form">
+            <div class="form-group">
+              <label>Subject *</label>
+              <input type="text" id="f-gen-subject"
+                placeholder="What is your inquiry about?">
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea id="f-gen-msg"
+                placeholder="How can we help you?"></textarea>
+            </div>
+          </div>
+
+          <div id="form-error" class="form-error" style="display:none;"></div>
+          <button class="btn-primary" id="submit-btn"
+            style="width:100%;padding:16px;margin-top:8px;"
+            onclick="submitForm()">Send Message <i
+              class="fa-solid fa-paper-plane"></i></button>
+
+          <!-- Success State -->
+          <div id="form-success"
+            style="display:none;text-align:center;padding:40px 20px;">
+            <div style="font-size:52px;margin-bottom:16px;">✅</div>
+            <h3 style="color:var(--navy);margin-bottom:10px;">Message Sent!</h3>
+            <p style="color:var(--gray);">Thank you for reaching out. Our team
+              will contact you within 1 business day.</p>
+            <button class="btn-primary" style="margin-top:24px;"
+              onclick="resetForm()">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-section">
+        <div class="map-label">
+          <i class="fa-solid fa-location-dot"></i>
+          Find Us — Whitby Manor Office Este, 167 14th Rd, Midrand, 1687,
+          Gauteng
+        </div>
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57310.97253031158!2d28.077430199999997!3d-25.9817484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573c74f1e6b2f%3A0x1d0b8d5c0b00da62!2sMidrand%2C+Gauteng!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Liv Investment location — Whitby Manor Office Este, 167 14th Rd, Midrand, 1687, Gauteng">
+        </iframe>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://cdn.builder.io/api/v1/image/assets%2F3f63c4ddbd50441e8f72ea99193eec33%2Fc224b0059c094308a9123958964fed89?format=webp&width=800&height=1200" alt="Liv Investment"
+            onerror="this.style.display='none'">
+          <p
+            style="color:var(--gold);font-weight:700;margin-bottom:8px;font-size:15px;">LIV
+            INVESTMENT (PTY) LTD</p>
+          <p>ICT | Cleaning | Security Solutions<br>Based in Midrand, South
+            Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="ict.html">ICT Solutions</a>
+          <a href="cleaning.html">Cleaning Solutions</a>
+          <a href="security.html">Security Solutions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a><i class="fa-solid fa-location-dot"></i> Whitby Manor Office Este,
+            167 14th Rd, Midrand, 1687, Gauteng</a>
+          <a><i class="fa-solid fa-phone"></i> 012 612 0937</a>
+          <a><i class="fa-solid fa-envelope"></i> info@livinvestment.co.za</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span class="footer-gold">Liv Investment (Pty) Ltd</span>. All
+          rights reserved.</p>
+        <p>ICT | Cleaning | Security Solutions</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+  </body>
+</html>
